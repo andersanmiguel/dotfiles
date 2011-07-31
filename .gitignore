@@ -1,0 +1,6 @@
+vim/sessions/*
+!vim/sessions/.gitignore
+vim/tmp/backup/*
+vim/tmp/swap/*
+!vim/tmp/backup/.gitignore
+!vim/tmp/swap/.gitignore
