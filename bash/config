@@ -38,5 +38,5 @@ BMAGENTA='\e[45m'
 BCYAN='\e[46m'
 BWHITE='\e[47m'
 
-PS1="\[$EGREEN\]\u@\h\:\[$EBLUE\]\w \[$WHITE\]\$(vcprompt)\n\[$EYELLOW\][\t]\[$EBLUE\] \$ \[$NO_COLOR\]"
+PS1="\[$ERED\]\u@\h\:\[$EBLUE\]\w \[$WHITE\]\$(vcprompt)\n\[$EYELLOW\][\t]\[$EBLUE\] \$ \[$NO_COLOR\]"
 # PS1="\n\u:\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\] \n→ "

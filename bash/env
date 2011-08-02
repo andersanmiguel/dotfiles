@@ -1,1 +1,1 @@
-PATH=$PATH:/home/ander01/.local/bin/
+PATH=$PATH:/home/$USER/.local/bin/:/home/$USER/bin
