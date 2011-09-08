@@ -244,6 +244,11 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
+" Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
+nnoremap <silent><C-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
 "Activa snippets de PHP en archivos HTML y viceversa
 
@@ -255,6 +260,9 @@ au BufNewFile *.php set ft=php.html
 
 "nmap <S-F5> :w <cr> :!extranetupload.sh %:p <cr>
 "nmap <S-F5> :w <cr> :!intranetupload.sh %:p <cr>
+
+filetype plugin on
+au FileType php set omnifunc=phpcomplete#CompletePHP
 
 let g:omni_sql_no_default_maps = 1
 
