@@ -4,3 +4,4 @@ vim/tmp/backup/*
 vim/tmp/swap/*
 !vim/tmp/backup/.gitignore
 !vim/tmp/swap/.gitignore
+vim/.netrwhist
