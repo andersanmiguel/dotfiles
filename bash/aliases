@@ -38,3 +38,17 @@ alias gst='git status'
 alias gt='git status'
 alias g='git status'
 alias eg='vim .git/config'
+
+
+# Temporary bookmarks
+# m* bookmark current path
+# g* cd to bookmark number
+alias m1='alias g1="cd `pwd`"'
+alias m2='alias g2="cd `pwd`"'
+alias m3='alias g3="cd `pwd`"'
+alias m4='alias g4="cd `pwd`"'
+alias m5='alias g5="cd `pwd`"'
+alias m6='alias g6="cd `pwd`"'
+alias m7='alias g7="cd `pwd`"'
+alias m8='alias g8="cd `pwd`"'
+alias m9='alias g9="cd `pwd`"'
