@@ -269,3 +269,6 @@ let g:omni_sql_no_default_maps = 1
 " PHP Generated Code Highlights (HTML & SQL) 
 let php_sql_query=1
 let php_htmlInStrings=1
+
+" Javascript indenter
+let g:SimpleJsIndenter_BriefMode = 1
