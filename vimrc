@@ -276,9 +276,5 @@ let g:SimpleJsIndenter_BriefMode = 1
 " Auto compile less files, plus compress them qith csstidy
 au BufNewFile,BufRead *.less set filetype=less
 if executable('lessc')
-    if executable('csstidy')
-        autocmd FileWritePost,BufWritePost *.less :silent !lessc %:p %:p:r.css && csstidy %:p:r.css --template=highest %:p:r.css > /dev/null
-    else 
-        autocmd FileWritePost,BufWritePost *.less :silent !lessc %:p %:p:r.css 
-    endif
+        autocmd FileWritePost,BufWritePost *.less :silent !lessc -x %:p %:p:r.css 
 endif
