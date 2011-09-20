@@ -6,3 +6,4 @@ vim/tmp/swap/*
 !vim/tmp/swap/.gitignore
 vim/.netrwhist
 bash/bookmarks
+bash/machine

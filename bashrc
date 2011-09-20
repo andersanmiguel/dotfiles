@@ -60,3 +60,4 @@ fi
 . ~/dotfiles/bash/config
 . ~/dotfiles/bash/aliases
 . ~/dotfiles/bash/bookmarks
+. ~/dotfiles/bash/machine
