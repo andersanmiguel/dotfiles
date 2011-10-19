@@ -276,5 +276,5 @@ let g:SimpleJsIndenter_BriefMode = 1
 " Auto compile less files (compressed)
 au BufNewFile,BufRead *.less set filetype=less
 if executable('lessc')
-        autocmd FileWritePost,BufWritePost *.less :silent !lessc -x %:p %:p:r.css 
+    autocmd FileWritePost,BufWritePost *.less :silent !lessc %:p %:p:r.css :grep 
 endif
