@@ -83,7 +83,8 @@ let g:pdv_cfg_CommentHead = "/**"
 let g:pdv_cfg_Comment1 = " * "
 let g:pdv_cfg_Commentn = " * "
 let g:pdv_cfg_CommentTail = " */"
-let g:pdv_cfg_CommentEnd = "/* }}} */"
+" let g:pdv_cfg_CommentEnd = "/* }}} */"
+let g:pdv_cfg_CommentEnd = ""
 let g:pdv_cfg_CommentSingle = "//"
 
 " Default values
@@ -312,7 +313,8 @@ func! PhpDocFunc()
     " Local indent
     let l:txtBOL = g:pdv_cfg_BOL . l:indent
 
-		exec l:txtBOL . "/* " . l:scope ." ".  funcname . "(" . l:params . ") {{" . "{ */ " . g:pdv_cfg_EOL
+    " Quitar el folding??
+		" exec l:txtBOL . "/* " . l:scope ." ".  funcname . "(" . l:params . ") {{" . "{ */ " . g:pdv_cfg_EOL
 	
     exe l:txtBOL . g:pdv_cfg_CommentHead . g:pdv_cfg_EOL
 	" added folding

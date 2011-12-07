@@ -79,7 +79,7 @@ set wrapmargin=0
 "Hard-wrap paragraphs of text
 nnoremap <leader>q gqip
 
-set foldmethod=marker
+" set foldmethod=marker
 "folding settings
 "set foldmethod=indent   "fold based on indent
 "set foldnestmax=10      "deepest fold is 10 levels
@@ -92,7 +92,7 @@ set foldmethod=marker
 set splitbelow    
 
 "Shortcut to fold tags with leader (usually \) + ft
-nnoremap <leader>ft Vatzf
+" nnoremap <leader>ft Vatzf
 
 nmap <space> :
 

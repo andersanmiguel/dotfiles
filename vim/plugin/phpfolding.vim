@@ -182,7 +182,7 @@ function! s:PHPCustomFolds() " {{{
 	call s:PHPFoldProperties('^\s*\$GLOBALS.*array\s*(', ";", s:FOLD_WITH_PHPDOC)
 
 	" Fold marker style comments ({{{ foo }}})
-	call s:PHPFoldMarkers('{{{', '}}}')
+	" call s:PHPFoldMarkers('{{{', '}}}')
 
 	" Fold PhpDoc "DocBlock" templates (#@+ foo #@-)
 	call s:PHPFoldMarkers('#@+', '#@-')
