@@ -226,3 +226,6 @@ snippet ppr
 	echo '<pre>';
 	print_r($${1:array});
 	echo '</pre>';${2}
+snippet error
+	trigger_error('${1:Error}', E_USER_ERROR);
+	${2}

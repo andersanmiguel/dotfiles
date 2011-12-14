@@ -22,8 +22,8 @@ set expandtab
 if has("gui_running")
     " See ~/.gvimrc
     " http://blog.toddwerth.com/entries/show/8
-    colorscheme ir_black
     colorscheme desertExMine
+    colorscheme molokai    " use this color scheme
     colorscheme vilight
     set guifont=Inconsolata\ 13  " use this font 
     set guifont=Monaco\ 11  " use this font 
