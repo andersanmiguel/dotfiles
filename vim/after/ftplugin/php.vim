@@ -1,15 +1,3 @@
-
-if !exists("g:DisableAutoPHPFolding")
-    let g:DisableAutoPHPFolding = 0
-endif
-
-if !g:DisableAutoPHPFolding 
-	" Don't use the PHP syntax folding
-	setlocal foldmethod=manual
-	" Turn on PHP fast folds
-	EnableFastPHPFolds 
-endif
-
 " Fix matchpairs for PHP (for matchit.vim plugin)
 if exists("loaded_matchit")
     let b:match_skip = 's:comment\|string'

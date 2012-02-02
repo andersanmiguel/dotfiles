@@ -38,7 +38,6 @@ endfunction
 let php_sql_query=1 " to highlight SQL syntax in strings
 let php_htmlInStrings=1 " to highlight HTML in string
 let php_noShortTags = 1 " to disable short tags 
-let php_folding = 1  "to enable folding for classes and functions
 let PHP_autoformatcomment = 1
 let php_sync_method = -1
 

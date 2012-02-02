@@ -15,8 +15,6 @@ set ruler
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set sw=4 " treat 4 spaces as a tab when deleting4
-set sts=4 " treat 4 spaces as a tab when deleting
 set expandtab
 
 if has("gui_running")
@@ -71,7 +69,7 @@ set smartcase
 set go-=T
 
 set wrap
-set linebreak
+" set linebreak
 set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
@@ -79,11 +77,10 @@ set wrapmargin=0
 "Hard-wrap paragraphs of text
 nnoremap <leader>q gqip
 
-" set foldmethod=marker
 "folding settings
-"set foldmethod=indent   "fold based on indent
-"set foldnestmax=10      "deepest fold is 10 levels
-"set nofoldenable        "dont fold by default
+set foldmethod=indent   "fold based on indent
+set foldnestmax=100      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
 " Note, perl automatically sets foldmethod in the syntax file
 "autocmd Syntax c,cpp,vim,xml,html,xhtml,php setlocal foldmethod=syntax
 "autocmd Syntax c,cpp,vim,xml,html,xhtml,perl,php normal zR
