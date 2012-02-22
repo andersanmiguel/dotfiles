@@ -53,3 +53,13 @@ alias m6='alias g6="cd `pwd`"'
 alias m7='alias g7="cd `pwd`"'
 alias m8='alias g8="cd `pwd`"'
 alias m9='alias g9="cd `pwd`"'
+
+
+# SVN
+# Examinate commit of files on vim
+function svn_commit() {
+    svn stat > /tmp/svn_commits.tmp
+    vim /tmp/svn_commits.tmp
+    svn commit `cat /tmp/svn_commits.tmp | cut -d' ' -f2- | xargs`
+    rm /tmp/svn_commits.tmp
+}
