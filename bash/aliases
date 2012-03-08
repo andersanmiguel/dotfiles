@@ -1,9 +1,9 @@
 # Command Enhancements
 
 # Utility
-alias reload='source ~/bin/dotfiles/bash/aliases'
-alias ea='vim -w ~/bin/dotfiles/bash/aliases && reload' # Edit aliases
-alias ee="vim ~/bin/dotfiles/bash/env"
+alias reload='source ~/dotfiles/bash/aliases'
+alias ea='vim -w ~/dotfiles/bash/aliases && reload' # Edit aliases
+alias ee="vim ~/dotfiles/bash/env"
 
 
 #common
@@ -54,6 +54,10 @@ alias m7='alias g7="cd `pwd`"'
 alias m8='alias g8="cd `pwd`"'
 alias m9='alias g9="cd `pwd`"'
 
+# Start a python server
+alias server='python -m SimpleHTTPServer'
+# alias server='x-www-browser http://localhost:8000 & && python -m SimpleHTTPServer'
+
 
 # SVN
 # Examinate commit of files on vim
@@ -63,3 +67,4 @@ function svn_commit() {
     svn commit `cat /tmp/svn_commits.tmp | cut -d' ' -f2- | xargs`
     rm /tmp/svn_commits.tmp
 }
+
