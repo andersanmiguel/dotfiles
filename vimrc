@@ -23,16 +23,18 @@ if has("gui_running")
     colorscheme desertExMine
     colorscheme molokai    " use this color scheme
     colorscheme vilight
+    colorscheme solarized
     set guifont=Inconsolata\ 13  " use this font 
     set guifont=Monaco\ 11  " use this font 
 "    set lines=50       " height = 50 lines
 "    set columns=100        " width = 100 columns
-"    set background=light   " adapt colors for background
+    set background=light   " adapt colors for background
 "    set selectmode=mouse,key,cmd
 "    set keymodel=
 else
-    colorscheme molokai    " use this color scheme
-"    set background=dark        " adapt colors for background
+    " colorscheme molokai    " use this color scheme
+    set background=dark        " adapt colors for background
+    colorscheme solarized
 endif
 
 "Show command in bottom right portion of the screen

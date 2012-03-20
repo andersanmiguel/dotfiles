@@ -55,7 +55,7 @@ alias m8='alias g8="cd `pwd`"'
 alias m9='alias g9="cd `pwd`"'
 
 # Start a python server
-alias server='python -m SimpleHTTPServer'
+alias sserver='python -m SimpleHTTPServer'
 # alias server='x-www-browser http://localhost:8000 & && python -m SimpleHTTPServer'
 
 
