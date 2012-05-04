@@ -337,7 +337,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>gnome-terminal</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="W-w">
@@ -352,7 +352,7 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>evolution</command>
+        <command>thunderbird</command>
       </action>
     </keybind>
     <keybind key="W-e">
