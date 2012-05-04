@@ -39,6 +39,8 @@ else
     colorscheme solarized
 endif
 
+set guifont=Monaco\ 11  " use this font 
+
 "Show command in bottom right portion of the screen
 set showcmd
 
@@ -64,6 +66,9 @@ set incsearch
 
 "Highlight searching
 set hlsearch
+
+"Disable last search term
+nmap <silent> <C-n> :noh<CR>
 
 " case insensitive search
 set ignorecase
