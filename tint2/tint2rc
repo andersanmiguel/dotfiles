@@ -127,6 +127,7 @@ launcher_icon_theme = elementary
 launcher_icon_size = 24
 launcher_tooltip = 1
 launcher_item_app = /usr/share/applications/firefox.desktop
+launcher_item_app = /usr/share/applications/gvim.desktop
 launcher_item_app = /usr/share/applications/libreoffice-startcenter.desktop
 
 # End of config

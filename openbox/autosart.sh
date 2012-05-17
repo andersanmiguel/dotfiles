@@ -1,4 +1,4 @@
 numlockx on &
 parcellite &
-sleep 3;tint2 &
+sleep 3;lxpanel &
 feh --bg-scale ~/Pictures/wall.jpg &
