@@ -13,3 +13,6 @@
 [submodule "vim/bundle/webapi"]
 	path = vim/bundle/webapi
 	url = https://github.com/mattn/webapi-vim.git
+[submodule "bundle/inline_edit"]
+	path = bundle/inline_edit
+	url = https://github.com/AndrewRadev/inline_edit.vim.git
