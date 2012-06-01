@@ -288,3 +288,6 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+" Gist options
+let g:gist_clip_command = 'xclip -selection clipboard'
