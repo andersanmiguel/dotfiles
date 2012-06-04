@@ -61,3 +61,5 @@ fi
 . ~/dotfiles/bash/aliases
 . ~/dotfiles/bash/bookmarks
 . ~/dotfiles/bash/machine
+
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
