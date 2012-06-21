@@ -5,6 +5,10 @@ alias reload='source ~/dotfiles/bash/aliases'
 alias ea='vim -w ~/dotfiles/bash/aliases && reload' # Edit aliases
 alias ee="vim ~/dotfiles/bash/env"
 
+#search recursive
+function  grc() {
+    grep -nHIrF $1 ./
+}
 
 #common
 alias c='clear'
@@ -13,7 +17,7 @@ alias md='mkdir -p'
 
 function take() { 
     mkdir -p "$1"
-    cd "$1" 
+    cd "$1"
 }
 
 
@@ -29,7 +33,7 @@ function gg() {
     git commit -v -a -m "$*"
 }
 alias gco='git checkout'
-alias gd='git diff'
+alias gd='git diff --color'
 alias gdm='git diff master'
 #alias gl='git pull'
 alias gnp="git-notpushed"
@@ -40,6 +44,8 @@ alias g='git status'
 alias eg='vim .git/config'
 alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 
+# git-ftp sync
+alias gsync='git ftp push && git pull && git ftp catchup'
 
 # Temporary bookmarks
 # m* bookmark current path
