@@ -1,0 +1,5 @@
+server='0.0.0.0'
+user='user'
+
+database_user='user'
+database_pass='passwords'

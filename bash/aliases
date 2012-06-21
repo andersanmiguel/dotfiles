@@ -74,3 +74,8 @@ function svn_commit() {
     rm /tmp/svn_commits.tmp
 }
 
+# Server Utilities
+
+alias lc='server_utilities.sh'
+
+
