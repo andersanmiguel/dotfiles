@@ -23,13 +23,13 @@ if has("gui_running")
     " See ~/.gvimrc
     " http://blog.toddwerth.com/entries/show/8
     colorscheme desertExMine
-    colorscheme molokai    " use this color scheme
     colorscheme vilight
     colorscheme solarized
+    colorscheme molokai    " use this color scheme
     set guifont=Inconsolata\ 13  " use this font 
 "    set lines=50       " height = 50 lines
 "    set columns=100        " width = 100 columns
-    set background=light   " adapt colors for background
+    set background=dark   " adapt colors for background
 "    set selectmode=mouse,key,cmd
 "    set keymodel=
 else
@@ -261,6 +261,9 @@ au BufNewFile *.php set ft=php.html
 filetype plugin on
 au FileType php set omnifunc=phpcomplete#CompletePHP
 
+" basic syntax checker for php
+nmap <leader>s :!php -l %<CR>
+
 let g:omni_sql_no_default_maps = 1
 
 " PHP Generated Code Highlights (HTML & SQL) 
@@ -275,6 +278,10 @@ au BufNewFile,BufRead *.less set filetype=less
 if executable('lessc')
     autocmd FileWritePost,BufWritePost *.less :silent !lessc %:p %:p:r.css :grep 
 endif
+
+inoremap <leader>d <ESC>:call PhpDocSingle()<CR>i
+nnoremap <leader>d :call PhpDocSingle()<CR>
+vnoremap <leader>d :call PhpDocRange()<CR> 
 
 
 " Ctrl-P options
