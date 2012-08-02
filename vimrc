@@ -35,7 +35,7 @@ if has("gui_running")
 else
     " colorscheme molokai    " use this color scheme
     set background=dark        " adapt colors for background
-    colorscheme solarized
+    colorscheme molokai
 endif
 
 "Show command in bottom right portion of the screen
@@ -249,11 +249,11 @@ imap <C-v> <ESC>"+pa
 
 "Activa snippets de PHP en archivos HTML y viceversa
 
-au BufRead *.html set ft=html.php
-au BufNewFile *.html set ft=html.php
-
-au BufRead *.php set ft=php.html
-au BufNewFile *.php set ft=php.html
+" au BufRead *.html set ft=html.php
+" au BufNewFile *.html set ft=html.php
+" 
+" au BufRead *.php set ft=php.html
+" au BufNewFile *.php set ft=php.html
 
 "nmap <S-F5> :w <cr> :!extranetupload.sh %:p <cr>
 "nmap <S-F5> :w <cr> :!intranetupload.sh %:p <cr>

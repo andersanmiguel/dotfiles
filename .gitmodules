@@ -22,3 +22,6 @@
 [submodule "vim/bundle/phpDocumentor"]
 	path = vim/bundle/phpDocumentor
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
+[submodule "vim/bundle/linters"]
+	path = vim/bundle/linters
+	url = https://bitbucket.org/tim_heap/linters.vim
