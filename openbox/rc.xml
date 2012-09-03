@@ -365,6 +365,11 @@
         <command>thunar</command>
       </action>
     </keybind>
+    <keybind key="W-a">
+      <action name="Execute">
+          <command>~/dotfiles/scripts/dmenu_raise.sh</command>
+      </action>
+    </keybind>
     <keybind key="A-F2">
       <action name="Execute">
         <command>gmrun</command>

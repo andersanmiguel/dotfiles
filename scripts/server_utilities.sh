@@ -38,11 +38,7 @@ function database {
     elif [[ $action == 'import' ]] 
     then
         echo "Importing $database ..."
-        ssh $user@$server mysqldump -u $database_user --password=$database_pass $database > /tmp/$database.sql
-        scp $user@$server:/tmp/$database.sql /tmp/$database.sql
-        ssh $user@$server rm /tmp/$database.sql
-        mysql -u $database_user --password=$database_pass $database < /tmp/$database.sql
-        rm /tmp/$database.sql
+        ssh $user@$server mysqldump -u $database_user --password=$database_pass $database | mysql -u $database_user --password=$database_pass $database 
     fi
 
 }
