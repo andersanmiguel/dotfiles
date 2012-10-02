@@ -250,6 +250,87 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+    <keybind key="A-KP_6">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>98%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_4">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>98%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_8">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>49%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_2">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>49%</y>
+        <width>100%</width>
+        <height>49%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_5">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>10%</x>
+        <y>10%</y>
+        <width>80%</width>
+        <height>80%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_7">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>49%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_9">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>49%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_1">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>49%</y>
+        <width>50%</width>
+        <height>49%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_3">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>49%</y>
+        <width>50%</width>
+        <height>49%</height>
+      </action>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
