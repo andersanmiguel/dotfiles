@@ -7,7 +7,7 @@ alias ee="vim ~/dotfiles/bash/env"
 
 #search recursive
 function  grc() {
-    grep -nHIrF $1 ./
+    grep -nHIrF "$1" ./
 }
 
 #common
