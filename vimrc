@@ -305,6 +305,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$',
   \ 'file': '\.exe$\|\.so$\|\.dll$'
   \ }
+let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
 
 " Gist options
 let g:gist_clip_command = 'xclip -selection clipboard'

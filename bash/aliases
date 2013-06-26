@@ -78,4 +78,4 @@ function svn_commit() {
 
 alias lc='server_utilities.sh'
 
-
+alias codeit="gvim && sass --watch public/sass:public/css"
