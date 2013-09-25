@@ -2,8 +2,11 @@
 
 "Forget compatibility with Vi. Who cares.
 set nocompatible
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
+
+"Status line with airline
+" let g:airline#extensions#tabline#enabled = 1
 
 "Enable filetypes
 filetype on
@@ -25,6 +28,8 @@ if has("gui_running")
     colorscheme desertExMine
     colorscheme vilight
     colorscheme solarized
+    colorscheme Tomorrow-Night
+    colorscheme Tomorrow-Night-Bright
     colorscheme molokai    " use this color scheme
     set guifont=Inconsolata\ 13  " use this font 
 "    set lines=50       " height = 50 lines
@@ -65,7 +70,7 @@ set incsearch
 set hlsearch
 
 "Disable last search term
-nmap <silent> <C-n> :noh<CR>
+nmap <silent> <C-N> :noh<CR>
 
 " case insensitive search
 set ignorecase
@@ -190,6 +195,8 @@ if exists(":Tabularize")
   vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
 
+"Remove trailing space
+autocmd FileType js,php autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 
 "------------------------"
@@ -258,7 +265,6 @@ imap <C-v> <ESC>"+pa
 "nmap <S-F5> :w <cr> :!extranetupload.sh %:p <cr>
 "nmap <S-F5> :w <cr> :!intranetupload.sh %:p <cr>
 
-filetype plugin on
 au FileType php set omnifunc=phpcomplete#CompletePHP
 "Close buffer window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
