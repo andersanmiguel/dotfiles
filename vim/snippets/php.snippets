@@ -4,3 +4,32 @@ snippet ppr
 	echo '<pre>';
 	print_r($${1:array});
 	echo '</pre>';${2}
+# Slim resource
+snippet slimresource
+	/* ------------------------------------ */
+	/* ${1:resource}
+	/* ------------------------------------ */
+
+	/* list $1 */
+	$${2:app}->get('/$1', function() use($$2) {
+	});
+
+	/* new $1 */
+	$$2->post('/$1', function() use($$2) {
+	});
+
+	/* one $1 */
+	$$2->get('/$1/:id', function($id) use($$2) {
+	});
+
+	/* edit $1 */
+	$$2->put('/$1/:id', function($id) use($$2) {
+	});
+
+	/* delete $1 */
+	$$2->delete('/$1/:id', function($id) use($$2) {
+	});
+
+	/* ------------------------------------ */
+	/* End of $1
+	/* ------------------------------------ */

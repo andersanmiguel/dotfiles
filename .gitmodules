@@ -46,9 +46,6 @@
 [submodule "vim/bundle/airline"]
 	path = vim/bundle/airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "vim/bundle/multiplecursors"]
-	path = vim/bundle/multiplecursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule "vim/bundle/tlib"]
 	path = vim/bundle/tlib
 	url = https://github.com/tomtom/tlib_vim.git
@@ -58,3 +55,6 @@
 [submodule "vim/bundle/vim-snippets"]
 	path = vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "vim/bundle/vim-multiplecursors"]
+	path = vim/bundle/vim-multiplecursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
