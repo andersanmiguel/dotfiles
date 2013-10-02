@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-multiplecursors"]
 	path = vim/bundle/vim-multiplecursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "vim/bundle/snippets"]
+	path = vim/bundle/snippets
+	url = https://github.com/honza/vim-snippets.git
