@@ -52,9 +52,6 @@
 [submodule "vim/bundle/addonmwutils"]
 	path = vim/bundle/addonmwutils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "vim/bundle/vim-snippets"]
-	path = vim/bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
 [submodule "vim/bundle/vim-multiplecursors"]
 	path = vim/bundle/vim-multiplecursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
