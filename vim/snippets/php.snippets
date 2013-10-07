@@ -1,5 +1,11 @@
 snippet php
 	<?php ${1} ?>
+snippet echo
+	<?php echo ${1}; ?>${2}
+snippet echo'
+	<?php echo '${1}'; ?>${2}
+snippet echov
+	<?php echo $${1:var}; ?>${2}
 snippet ppr
 	echo '<pre>';
 	print_r($${1:array});

@@ -7,6 +7,8 @@ call pathogen#helptags()
 
 "Status line with airline
 " let g:airline#extensions#tabline#enabled = 1
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
 
 "Enable filetypes
 filetype on
