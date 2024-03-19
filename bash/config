@@ -1,4 +1,4 @@
-# Colors from http://wiki.archlinux.org/index.php/Color_Bash_Prompt
+#rom http://wiki.archlinux.org/index.php/Color_Bash_Prompt
 # misc
 NO_COLOR='\e[0m' #disable any colors
 # regular colors
@@ -37,6 +37,10 @@ BBLUE='\e[44m'
 BMAGENTA='\e[45m'
 BCYAN='\e[46m'
 BWHITE='\e[47m'
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 
 #PS1="\[$ERED\]\u@\h\:\[$EBLUE\]\w \[$WHITE\]\$(vcprompt)\n\[$EYELLOW\][\t]\[$EBLUE\] \$ \[$NO_COLOR\]"
 PS1="\[$EYELLOW\][\t] : \[$EBLUE\]\w \[$WHITE\]\$(parse_git_branch)\n\[$EBLUE\]\[$EGREEN\]\u@\h \[$EWHITE\]\$ \[$NO_COLOR\]"
