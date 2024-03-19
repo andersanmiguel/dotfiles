@@ -11,7 +11,8 @@ return require('packer').startup(function(use)
     }
 
     use 'tanvirtin/monokai.nvim'
-
+    use 'roflolilolmao/oceanic-next.nvim'
+    use 'RRethy/nvim-base16'
 
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -44,13 +45,21 @@ return require('packer').startup(function(use)
     }
 
     use {
+        'norcalli/nvim-colorizer.lua',
+        config = function()
+            require('colorizer').setup()
+        end
+    }
+
+    use {
         'numToStr/Comment.nvim',
         config = function()
             require('Comment').setup()
         end
     }
 
-    use 'Exafunction/codeium.vim'
+    -- use 'Exafunction/codeium.vim'
+    use 'github/copilot.vim'
 
     use {
         'nvim-tree/nvim-tree.lua',
@@ -61,5 +70,17 @@ return require('packer').startup(function(use)
             require("nvim-tree").setup {}
         end
     }
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+        config = function()
+            require('lualine').setup {
+                -- options = { theme  = 'monokai' }
+
+            }
+        end
+    }
+
 
 end)

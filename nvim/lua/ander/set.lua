@@ -13,7 +13,7 @@ vim.opt.incsearch = true
 vim.opt.splitbelow = true
 
 vim.opt.backup = true
-vim.opt.directory = "/Users/asanmiguel/.config/nvim/backup"
-vim.opt.backupdir = "/Users/asanmiguel/.config/nvim/backup"
+vim.opt.directory = "/Users/asanmiguel/.config/nvim-backup"
+vim.opt.backupdir = "/Users/asanmiguel/.config/nvim-backup"
 
 vim.opt.confirm = true

@@ -8,3 +8,4 @@ vim/.netrwhist
 bash/bookmarks
 bash/machine
 .DS_Store
+nvim/backup/
